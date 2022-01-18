@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,700;1,300&family=Podkova:wght@700&display=swap');
+
+/*
+
+    font-family: 'Alegreya Sans', sans-serif; // testo generale
+
+    font-family: 'Podkova', serif; // titoli h3
+
+*/
+
+html {
+    height: 100%;
+    background-color: #C0BEBE;
+    background-image: url(./images/noise-gif-square-anim.gif);
+    background-repeat: repeat;
+}
+
+body {
+    height: 100%;
+    margin: 0px;
+    background-color: #f1eded8c;
+    /* background-image: url(./images/noise-gif-square-anim.gif);
+    background-repeat: repeat; */
+    padding: 30px;
+}
+
+.main-container {
+    background-color: rgba(0, 0, 0, 0.685);
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 2fr 6fr auto;
+    grid-template-areas: "header header"
+                         "menu content"
+                         "footer footer";
+    height: 100%;
+    border-radius: 10px;
+}
+
+.header-container {
+    /* background-color: aqua; */
+    height: 350px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.header-image-container {
+    height: 100%;
+    width: calc(100% - 400px);
+    background-image: url(./images/header-background.jpg);
+    background-size: cover;
+    background-position: center top;
+}
+
+.menu-container {
+    background-color: red;
+    height: 200px;
+    grid-area: menu;
+}
+
+.content-container {
+    background-color: green;
+    height: 100%;
+    grid-area: content;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.mod-div-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.campaign-info-div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    border: 2px solid pink;
+}
+
+.campaign-info {
+    border: 1px solid white;
+}
+
+.campaign-image {
+    border: 1px solid orange;
+}
+
+.footer {
+    background-color: rgba(12, 11, 11, 0.459);
+    height: 200px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    grid-area: footer;
+}
